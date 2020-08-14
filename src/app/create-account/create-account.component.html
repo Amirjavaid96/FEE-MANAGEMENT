@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="form">
+    <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                    <h3 class="panel-title">Please sign up to create Account <small>It's free!</small></h3>
+                     </div>
+                     <br><br>
+                     <div class="panel-body">
+                    <form role="form" #thisForm="ngForm" (ngSubmit)="submitform(thisForm) ">
+                        <div class="row" >
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                        <input type="text" name="first_name"  id="first_name" class="form-control input-sm" #firstname="ngModel" ngModel placeholder="First Name" form="reset" required>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="last_name" id="last_name" class="form-control input-sm" #lastname="ngModel" ngModel placeholder="Last Name" required
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control input-sm" #email="ngModel" ngModel placeholder="Email Address" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="password" name="password" id="password" class="form-control input-sm" #password="ngModel" ngModel placeholder="Password" required>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="password" name="password_confirmation" id="password_confirmation" #confirmpassword="ngModel" ngModel class="form-control input-sm" placeholder="Confirm Password">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-info btn-block" type="submit">Create Account</button>
+                        
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
